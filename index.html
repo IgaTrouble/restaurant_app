@@ -20,20 +20,21 @@
 
   <main id="maincontent">
     <section id="map-container" tabindex="-1">
-      <div id="map"></div>
+      <div id="map" aria-label="New York City Restaurants Map"></div>
     </section>
     <section>
       <div class="filter-options">
         <h2>Filter Results</h2>
-        <select id="neighborhoods-select" tabindex="0" name="neighborhoods" onchange="updateRestaurants()">
+
+        <select id="neighborhoods-select" tabindex="0" name="neighborhoods" aria-label="Choose your neighborhoods?" onchange="updateRestaurants()">
           <option value="all">All Neighborhoods</option>
         </select>
-        <select id="cuisines-select" tabindex="0" name="cuisines" onchange="updateRestaurants()">
+        <select id="cuisines-select" tabindex="0" name="cuisines" aria-label="Choose which cuisine do you prefer?" onchange="updateRestaurants()">
           <option value="all">All Cuisines</option>
         </select>
       </div>
 	  <div class="native">
-      <ul id="restaurants-list"></ul>
+      <ul id="restaurants-list" aria-label="Restaurants list" ></ul>
 	  </div>
     </section>
   </main>
