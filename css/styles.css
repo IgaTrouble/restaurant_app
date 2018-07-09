@@ -141,7 +141,7 @@ nav h1 a {
   background-color: #fff;
   border: 2px solid #ccc;
   font-family: Arial,sans-serif;
-  margin: 15px;
+  margin: 0 15px 15px 15px;
   min-height: 380px;
   padding: 0 30px 25px;
   text-align: left;
@@ -273,3 +273,58 @@ nav h1 a {
 #restaurant-hours td {
   color: #666;
 }
+
+/* ====================== Responsive Designe ====================== */
+
+/* ====== devices at least 1650px and larger ======= */
+@media only screen and (min-width: 1650px) {
+
+	ul {
+		column-count: 5;
+		-webkit-columns: 5;
+	}
+	.native {
+		float: left;
+		position: relative;
+	}
+}
+
+/* ====== devices at least 1500px and smaller than 1649px ======= */
+@media screen and (min-width: 1500px) and (max-width: 1649px) {
+	ul {
+		column-count: 4;
+		-webkit-columns: 4;
+	}
+li {
+    display: inline-block;
+	}
+}
+	
+/* ====== devices at least 1090px and smaller than 1499px ======= */
+@media screen and (min-width: 1090px) and (max-width: 1499px) {
+	ul {
+		column-count: 3;
+		-webkit-columns: 3;
+	}
+li {
+    display: inline-block;
+	}
+}
+	
+/* ====== devices at least 730px and smaller than 1089px ======= */
+@media screen and (min-width: 730px) and (max-width: 1089px) {
+	ul {
+		column-count: 2;
+		-webkit-columns: 2;
+	}
+li {
+    display: inline-block;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	#neighborhoods-select, #cuisines-select{
+		width: 100px;
+	}
+	
+}	
