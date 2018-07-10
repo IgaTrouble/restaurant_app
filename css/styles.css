@@ -362,9 +362,8 @@ nav h1 a {
 		column-count: 5;
 		-webkit-columns: 5;
 	}
-	.native {
-		float: left;
-		position: relative;
+	#restaurants-list li {
+		display: inline-block;
 	}
 }
 
@@ -376,7 +375,7 @@ nav h1 a {
 		column-count: 4;
 		-webkit-columns: 4;
 	}
-	#restaurants-list liS {
+	#restaurants-list li {
 		display: inline-block;
 	}
 }
