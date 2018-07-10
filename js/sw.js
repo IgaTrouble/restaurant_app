@@ -3,7 +3,7 @@ var staticCacheName = 'restaurant-cache';
 self.addEventListener('install', function(event) {
 	console.log('działa');
   event.waitUntil(
-    static.open(staticCacheName).then(function(cache) {
+    caches.open(staticCacheName).then(function(cache) {
 		return cache.addAll([
 		    '/',
 			'./index.html',
